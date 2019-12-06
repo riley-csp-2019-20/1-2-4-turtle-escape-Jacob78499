@@ -1,14 +1,22 @@
+#an import for the turtle to draw the maze
 import turtle as trtl 
+import random as random
 
+#renaming the turtle to a better name to identify it
 maze_bot = trtl.Turtle()
 maze_bot.ht()
+#a different color for the turtle
 maze_bot.color("green")
+
 
 amount = 25
 wall_width = 25
 maze_bot.speed(0)
 maze_bot.pensize(5)
+door_width = 10
 
+
+#code for the range of the maze
 for i in range(25):
     if i < 22:
         maze_bot.forward(amount/3)
